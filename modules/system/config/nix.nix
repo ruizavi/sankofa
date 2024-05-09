@@ -15,7 +15,7 @@
       enable = true;
       extraArgs = "--keep-since 30d";
     };
-    flake = "/home/avi/Documents/code/sankofa";
+#    flake = "/home/avi/Documents/code/sankofa";
   };
 
   nix = {
