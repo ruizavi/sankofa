@@ -12,10 +12,6 @@
 
       userName = "avi";
       userEmail = "avi.ruiz@proton.com";
-      signing = {
-        key = "A69A110979DF4E36";
-        signByDefault = true;
-      };
 
       aliases = {
         a = "add";
