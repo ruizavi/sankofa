@@ -24,11 +24,12 @@
         device = "nodev";
         efiSupport = true;
         useOSProber = true;
+        configurationLimit = 5;
         gfxmodeEfi = "1920x1080";
       };
     };
 
-#    plymouth.enable = true;
+    plymouth.enable = true;
   };
 
   environment.systemPackages = with pkgs; [
