@@ -29,7 +29,7 @@
       };
     };
 
-    plymouth.enable = true;
+#    plymouth.enable = true;
   };
 
   environment.systemPackages = with pkgs; [
