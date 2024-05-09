@@ -15,7 +15,7 @@
       enable = true;
       extraArgs = "--keep-since 30d";
     };
-#    flake = "/home/avi/Documents/code/sankofa";
+    flake = "/home/avi/Desktop/sankofa";
   };
 
   nix = {
@@ -30,8 +30,6 @@
       keep-derivations = true;
       keep-outputs = true;
       trusted-users = ["root" "@wheel"];
-      max-jobs = "auto";
-      warn-dirty = false;
     };
   };
 
