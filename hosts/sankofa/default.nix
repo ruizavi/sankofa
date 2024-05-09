@@ -6,7 +6,16 @@
   boot = {
     initrd = {
       systemd.enable = true;
+      supportedFilesystems = ["ext4"];
     };
+
+    kernelPackages = pkgs.linuxPackages_latest;
+
+    kernelParams = [
+      "quiet"
+      "systemd.show_status=auto"
+      "rd.udev.log_level=3"
+    ];
 
     loader = {
       efi.canTouchEfiVariables = true;
