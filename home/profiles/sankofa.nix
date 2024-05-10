@@ -1,17 +1,20 @@
 {
-  lib, pkgs, ...
+  lib,
+  pkgs,
+  ...
 }: {
   imports = [
     ../modules/programs/kitty.nix
     ../modules/programs/firefox.nix
     ../modules/programs/vscode
+    ../modules/dev
 
     ../modules/config/gtk.nix
     ../modules/config/home-cursor.nix
   ];
 
   home = {
-    packages = lib.attrValues { 
+    packages = lib.attrValues {
       inherit
         (pkgs)
         curl
@@ -23,7 +26,7 @@
         ttyper
         wget
         ;
-        # GUI
+      # GUI
       inherit
         (pkgs)
         zathura
@@ -31,6 +34,4 @@
         ;
     };
   };
-
-
 }
