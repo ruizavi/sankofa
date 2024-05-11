@@ -29,7 +29,7 @@ in {
     extraModulePackages = [
       debugdriver
     ];
-    boot.kernelModules = ["debugdriver"];
+    kernelModules = ["debugdriver"];
 
     kernelParams = [
       "quiet"
