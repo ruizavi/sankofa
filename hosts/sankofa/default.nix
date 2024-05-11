@@ -26,7 +26,7 @@ in {
     ];
 
     kernelPackages = pkgs.linuxPackages_latest;
-    boot.extraModulePackages = [
+    extraModulePackages = [
       debugdriver
     ];
     boot.kernelModules = ["debugdriver"];
