@@ -1,12 +1,4 @@
-{
-  pkgs,
-  config,
-  ...
-}: let
-  debugdriver = pkgs.callPackage ./kernel_modules/debugdriver {
-    kernel = config.boot.kernelPackages.kernel;
-  };
-in {
+{pkgs, ...}: {
   imports = [
     ./hardware-configuration.nix
   ];
@@ -19,22 +11,9 @@ in {
 
     kernelPatches = [
       {
-        name = "Rust Support";
-        patch = null;
-        features = {rust = true;};
+        name = "Sound patch";
+        patch = ./sound.patch;
       }
-    ];
-
-    kernelPackages = pkgs.linuxPackages_latest;
-    extraModulePackages = [
-      debugdriver
-    ];
-    kernelModules = ["debugdriver"];
-
-    kernelParams = [
-      "quiet"
-      "systemd.show_status=auto"
-      "rd.udev.log_level=3"
     ];
 
     loader = {
