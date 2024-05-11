@@ -1,4 +1,12 @@
-{pkgs, ...}: {
+{
+  pkgs,
+  config,
+  ...
+}: let
+  debugdriver = pkgs.callPackage ./kernel_modules/debugdriver {
+    kernel = config.boot.kernelPackages.kernel;
+  };
+in {
   imports = [
     ./hardware-configuration.nix
   ];
@@ -9,7 +17,19 @@
       supportedFilesystems = ["ext4"];
     };
 
+    kernelPatches = [
+      {
+        name = "Rust Support";
+        patch = null;
+        features = {rust = true;};
+      }
+    ];
+
     kernelPackages = pkgs.linuxPackages_latest;
+    boot.extraModulePackages = [
+      debugdriver
+    ];
+    boot.kernelModules = ["debugdriver"];
 
     kernelParams = [
       "quiet"
