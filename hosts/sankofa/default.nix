@@ -9,12 +9,12 @@
       supportedFilesystems = ["ext4"];
     };
 
-    kernelPatches = [
-      {
-        name = "Sound patch";
-        patch = ./sound.patch;
-      }
-    ];
+    #    kernelPatches = [
+    #      {
+    #        name = "Sound patch";
+    #        patch = ./sound.patch;
+    #      }
+    #    ];
 
     loader = {
       efi.canTouchEfiVariables = true;
