@@ -38,6 +38,8 @@
         (pkgs)
         zathura
         obsidian
+        keepassxc
+        rclone
         ;
     };
   };
