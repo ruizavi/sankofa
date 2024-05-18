@@ -1,4 +1,10 @@
-{inputs, self, themes, homeImports, ...}: let
+{
+  inputs,
+  self,
+  themes,
+  homeImports,
+  ...
+}: let
   inherit (inputs.nixpkgs.lib) nixosSystem;
 
   modules = "${self}/modules/system";
@@ -15,6 +21,7 @@ in {
         ./sankofa
 
         "${modules}/config"
+        "${modules}/config/hypr.nix"
         "${modules}/programs"
         "${modules}/security"
         "${modules}/services"

@@ -28,19 +28,15 @@
     enable = true;
   };
 
-  environment.systemPackages = with pkgs;
-    [
-      acpi
-      alsa-utils
-      mesa
-      vulkan-tools
-      vulkan-loader
-      vulkan-validation-layers
-      vulkan-extension-layer
-    ]
-    ++ [
-      sddm-theme
-    ];
+  environment.systemPackages = with pkgs; [
+    acpi
+    alsa-utils
+    mesa
+    vulkan-tools
+    vulkan-loader
+    vulkan-validation-layers
+    vulkan-extension-layer
+  ];
 
   hardware.opengl = {
     enable = true;
