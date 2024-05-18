@@ -1,6 +1,6 @@
 {lib, ...}: {
   time = {
-    timeZone = lib.mkDefault "America/New_Yor";
-    hardwareClockInLocalTime = lib.mkDefault false;
+    timeZone = lib.mkDefault "America/Monterrey";
+    hardwareClockInLocalTime = lib.mkDefault true;
   };
 }

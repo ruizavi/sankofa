@@ -6,6 +6,7 @@
       ''$MOD, Return, exec, ${pkgs.kitty}/bin/kitty''
       ''$MOD, Space, exec, ${pkgs.killall} rofi || $HOME/.config/hypr/scripts/launcher.sh''
       "$MOD, Backspace, exec, $HOME/.config/hypr/scripts/wlogout.sh"
+      "$MOD, L, exec, ${pkgs.hyprlock}/bin/hyprlock"
       "$MOD, Delete, exit,"
       "$MOD, Q, killactive"
 

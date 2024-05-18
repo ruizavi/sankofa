@@ -2,7 +2,7 @@
   imports = [
     ./settings
     ./hyprlock.nix
-    ./hypridle.nix
+    # ./hypridle.nix
   ];
 
   wayland.windowManager.hyprland = {

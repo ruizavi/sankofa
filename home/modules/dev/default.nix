@@ -3,6 +3,11 @@
   pkgs,
   ...
 }: {
+  imports = [
+    ./python.nix
+    ./rust.nix
+    ./security.nix
+  ];
   home = {
     packages = lib.attrValues {
       # DEV Tools
