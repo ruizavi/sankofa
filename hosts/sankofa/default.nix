@@ -1,4 +1,6 @@
-{pkgs, ...}: {
+{pkgs, ...}: let
+  sddm-theme = pkgs.libsForQt5.callPackage ../../pkgs/sddm-theme/default.nix {};
+in {
   imports = [
     ./hardware-configuration.nix
   ];
@@ -8,13 +10,6 @@
       systemd.enable = true;
       supportedFilesystems = ["ext4"];
     };
-
-    #    kernelPatches = [
-    #      {
-    #        name = "Sound patch";
-    #        patch = ./sound.patch;
-    #      }
-    #    ];
 
     loader = {
       efi.canTouchEfiVariables = true;
@@ -31,15 +26,23 @@
     plymouth.enable = true;
   };
 
-  environment.systemPackages = with pkgs; [
-    acpi
-    alsa-utils
-    mesa
-    vulkan-tools
-    vulkan-loader
-    vulkan-validation-layers
-    vulkan-extension-layer
-  ];
+  nixpkgs.config.qt5 = {
+    enable = true;
+  };
+
+  environment.systemPackages = with pkgs;
+    [
+      acpi
+      alsa-utils
+      mesa
+      vulkan-tools
+      vulkan-loader
+      vulkan-validation-layers
+      vulkan-extension-layer
+    ]
+    ++ [
+      sddm-theme
+    ];
 
   hardware.opengl = {
     enable = true;
@@ -66,6 +69,7 @@
 
   services.xserver.displayManager.sddm.enable = true;
   services.xserver.desktopManager.xfce.enable = true;
+  services.xserver.displayManager.sddm.theme = "sugar-dark";
 
   services.xserver = {
     layout = "us";

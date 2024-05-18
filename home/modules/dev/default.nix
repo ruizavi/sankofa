@@ -18,6 +18,7 @@
         nodejs
         typescript
         biome
+	dbeaver
 	gh
         ;
 
