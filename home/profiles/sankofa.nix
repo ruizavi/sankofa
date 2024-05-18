@@ -7,6 +7,10 @@
     ../modules/programs/kitty.nix
     ../modules/programs/firefox.nix
     ../modules/programs/vscode
+    ../modules/programs/hypr
+    ../modules/programs/ags
+    ../modules/programs/wlogout
+    ../modules/programs/rofi.nix
     ../modules/dev
 
     ../modules/config/gtk.nix
@@ -17,6 +21,9 @@
     packages = lib.attrValues {
       inherit
         (pkgs)
+        jq
+        pamixer
+        brightnessctl
         curl
         killall
         neofetch

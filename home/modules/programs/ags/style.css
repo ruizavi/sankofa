@@ -1,0 +1,143 @@
+* { all: unset; text-shadow: 0 2px 3px rgba(0, 0, 0, 0.2); font-family: "Material Design Icons", "Iosevka Nerd Font Mono", Inter, Roboto, sans-serif; }
+
+tooltip { border-radius: calc(12px + 2px); background: #1e1e2e; }
+
+/* Battery */
+.batteryButton { padding: 3px 2px 6px 2px; margin: 1px; }
+
+.batteryProgress { color: #73DACA; padding: 4px 4px; margin: 0.1rem; font-size: 6px; background: #1e1e2e; min-height: 1.75rem; min-width: 1.75rem; }
+
+/* CPU */
+.cpuButton { padding: 6px 2px 3px 2px; margin: 2px; }
+
+.cpuProgress { color: #7AA2F7; padding: 4px 4px; margin: 0.1rem; font-size: 6px; background: #1e1e2e; min-height: 1.75rem; min-width: 1.75rem; }
+
+/* RAM */
+.memButton { padding: 3px 2px 6px 2px; margin: 2px; }
+
+.memProgress { color: #BB9AF7; padding: 4px 4px; margin: 0.1rem; font-size: 6px; background: #1e1e2e; min-height: 1.75rem; min-width: 1.75rem; }
+
+.systemUsage { color: #cdd6f4; background: #313244; font-family: symbolsnerdfontmono; border-radius: 12px; margin: 4px; }
+
+
+/* Launcher Icon */
+
+.launcherIcon { background: #313244; font-size: 16px; font-family: symbolsnerdfontmono; border-radius: 12px; margin: 6px 4px; padding: 6px; min-height: 1.75rem; transition: all 0.2s cubic-bezier(0.3, 0, 1, 1); }
+
+.launcherIcon:hover { background: #3c3d53; }
+
+/* Clima */
+
+.weather { background: #313244; font-family: "Material Symbols Sharp", Roboto; border-radius: 12px; margin: 6px 4px; padding: 4px; min-height: 1.5rem; min-width: 1rem; transition: all 0.2s cubic-bezier(0.3, 0, 1, 1); }
+
+/* Workspace */
+
+.workspaces { background: transparent; padding: 14px; }
+
+.workspaces button { transition: all 0.3s cubic-bezier(0.2, 0, 0, 1), border 0.35s cubic-bezier(0.2, 0, 0, 1); margin: 6px 3px; color: #cdd6f4; background: #313244; margin: 5px 3px; min-width: 0.6rem; min-height: 0.6rem; color: transparent; background: #cdd6f4; border-radius: 99px; }
+
+.workspaces button:hover { color: #b4befe; }
+
+.workspaces button:hover { background: #b4befe; }
+
+.workspaces button.focused { border-radius: 18px; background: #89b4fa; padding: 8px 0; }
+
+/* Systray */
+
+.tray { margin: 0; }
+
+.trayChevron { font-family: symbolsnerdfontmono; }
+
+.trayIcons { margin: 3px 0 0; }
+
+.trayIcon { margin: 0 0 3px; }
+
+/* Audio */
+
+.audio { transition: all 0.3s cubic-bezier(0.2, 0, 0, 1), border 0.35s cubic-bezier(0.2, 0, 0, 1); margin: 6px 3px; color: #cdd6f4; background: #313244; }
+
+.audio:hover { color: #b4befe; }
+
+/* Network*/
+
+.network { transition: all 0.3s cubic-bezier(0.2, 0, 0, 1), border 0.35s cubic-bezier(0.2, 0, 0, 1); margin: 6px 2px; color: #cdd6f4; background: #313244; }
+
+.network:hover { color: #b4befe; }
+
+/* Clock */
+
+.clock { background: #313244; color: #cdd6f4; font-family: robotomono; font-weight: 800; border-radius: 12px; margin: 6px 4px; padding: 6px; }
+
+/* Power */
+
+.power { color: #f38ba8; background: #313244; font-size: 24px; border-radius: 12px; margin: 6px 4px; padding: 6px; min-height: 1.5rem; transition: all 0.2s cubic-bezier(0.3, 0, 1, 1); }
+
+.power:hover { background: #3c3d53; color: #f5a2b9; }
+
+/* Bar */
+.bar { border-radius: calc(12px + 2px); color: #cdd6f4; background: #1e1e2e; font-family: roboto; border-radius: 14px; padding: 2px; }
+
+
+.lock { background: #313244; font-size: 24px; border-radius: 12px; margin: 2px 4px; padding: 2px; }
+
+.swallow { transition: all 0.3s cubic-bezier(0.2, 0, 0, 1), border 0.35s cubic-bezier(0.2, 0, 0, 1); margin: 6px 3px; color: #cdd6f4; background: #313244; }
+
+.swallow:hover { color: #b4befe; }
+
+.utilsBox { border-radius: 12px; color: #cdd6f4; background: #313244; font-family: symbolsnerdfontmono; margin: 4px; padding: 6px; }
+
+.systemInfo { border-radius: 12px; color: #cdd6f4; background: #313244; font-family: symbolsnerdfontmono; margin: 4px; padding: 6px; }
+
+.launcher { color: #cdd6f4; background: #1e1e2e; font-family: roboto; border-radius: 12px; margin: 0 0 16px; padding: 6px; }
+
+.launcherApp { border-radius: 12px; margin: 3px; padding: 3px; }
+
+.launcherApp:focus { background: #313244; }
+
+.launcherEntry { caret-color: #cdd6f4; background: #313244; border-radius: 10px; margin: 6px; padding: 3px 12px; }
+
+.launcherItemIcon { margin: 3px 6px; }
+
+.launcherItemTitle { font-size: 16px; font-weight: bold; }
+
+.launcherItemDescription { font-size: 12px; }
+
+
+/* Brightness and Audio popup */
+.popup { background: #1e1e2e; border-radius: 12px; margin: 6px; padding: 12px; min-width: 200px; }
+
+.popupIcon { font-family: symbolsnerdfontmono; margin: 0 6px 0 0; }
+
+.popupBar { min-width: 200px; }
+
+.popupBar scale { min-height: 12px; }
+
+.popupBar trough { background: rgba(49, 50, 68, 0.5); border-radius: 24px; min-height: 12px; }
+
+.popupBar highlight { background: #cdd6f4; border-radius: 24px; min-width: 12px; }
+
+/* Notifications */
+
+.notification { border-radius: calc(12px + 2px); margin: 5px 5px 5px 12px; min-width: 25rem; background-color: #1e1e2e; color: #cdd6f4; }
+
+.notification.low { border: 1.5px solid black; }
+
+.notification.normal { border: 1.5px solid black; }
+
+.notification.critical { border: 1.5px solid black; }
+
+.notifications widget:last-child .notification { margin-bottom: 15px; }
+
+.notification .icon image { font-size: 5rem; margin: 0.5rem; min-height: 5rem; min-width: 5rem; }
+
+.notification .icon > box { border-radius: 12px; margin: 0.5rem; min-height: 5rem; min-width: 5rem; }
+
+.notification .actions .action-button { border-radius: calc(12px + 2px); transition: all 0.3s cubic-bezier(0.2, 0, 0, 1), border 0.35s cubic-bezier(0.2, 0, 0, 1); padding: 4px 0; }
+
+.notification .actions .action-button:hover { background: #cdd6f4; }
+
+.notification .text { margin: 6px 4px; }
+
+.notification .text .title { margin: 4px 6px; color: #cdd6f4; font-weight: 900; }
+
+.notification .text .body { margin: 4px 6px; color: #cdd6f4; font-weight: 600; }

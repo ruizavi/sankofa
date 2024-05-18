@@ -1,6 +1,4 @@
-{pkgs, ...}: let
-  sddm-theme = pkgs.libsForQt5.callPackage ../../pkgs/sddm-theme/default.nix {};
-in {
+{pkgs, ...}: {
   imports = [
     ./hardware-configuration.nix
   ];
@@ -64,12 +62,6 @@ in {
       criticalPowerAction = "Hibernate";
     };
   };
-
-  services.xserver.enable = true;
-
-  services.xserver.displayManager.sddm.enable = true;
-  services.xserver.desktopManager.xfce.enable = true;
-  services.xserver.displayManager.sddm.theme = "sugar-dark";
 
   services.xserver = {
     layout = "us";

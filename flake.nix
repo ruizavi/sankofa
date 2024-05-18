@@ -12,10 +12,7 @@
 
     flake-utils.url = "github:numtide/flake-utils";
     catppuccin-vsc.url = "github:catppuccin/vscode";
-
-    # nh.url = "github:viperML/nh";
-    # nh.inputs.nixpkgs.follows = "nixpkgs";
-
+    ags.url = "github:Aylur/ags";
     catppuccin = {
       url = "github:catppuccin/nix";
     };

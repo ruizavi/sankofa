@@ -18,8 +18,9 @@
         nodejs
         typescript
         biome
-	dbeaver
-	gh
+        warp-terminal
+        dbeaver
+        gh
         ;
 
       inherit
