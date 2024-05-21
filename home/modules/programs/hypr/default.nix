@@ -2,6 +2,7 @@
   imports = [
     ./settings
     ./hyprlock.nix
+    ./swayidle.nix
     # ./hypridle.nix
   ];
 

@@ -39,7 +39,6 @@
         zathura
         obsidian
         keepassxc
-        rclone
         ;
     };
   };
