@@ -3,7 +3,6 @@
     ./settings
     ./hyprlock.nix
     ./swayidle.nix
-    # ./hypridle.nix
   ];
 
   wayland.windowManager.hyprland = {

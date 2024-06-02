@@ -31,7 +31,6 @@
   home-manager.sharedModules = [
     inputs.anyrun.homeManagerModules.default
     inputs.spicetify-nix.homeManagerModules.default
-    inputs.hyprlock.homeManagerModules.hyprlock
   ];
 
   programs = {

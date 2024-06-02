@@ -11,7 +11,6 @@
     ../modules/programs/anyrun
     ../modules/programs/ags
     ../modules/programs/wlogout
-    # ../modules/programs/rofi.nix
     ../modules/dev
 
     ../modules/config/gtk.nix
