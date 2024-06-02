@@ -8,9 +8,10 @@
     ../modules/programs/firefox.nix
     ../modules/programs/vscode
     ../modules/programs/hypr
+    ../modules/programs/anyrun
     ../modules/programs/ags
     ../modules/programs/wlogout
-    ../modules/programs/rofi.nix
+    # ../modules/programs/rofi.nix
     ../modules/dev
 
     ../modules/config/gtk.nix
@@ -39,6 +40,8 @@
         zathura
         obsidian
         keepassxc
+        spotify
+        discord
         ;
     };
   };

@@ -1,5 +1,6 @@
 {
   imports = [
+    # ./modules
     ../hosts
     ../lib
     ../home
@@ -9,7 +10,9 @@
   systems = ["x86_64-linux"];
 
   perSystem = {
-    config, pkgs, ...
+    config,
+    pkgs,
+    ...
   }: {
     devShells.default = pkgs.mkShell {
       packages = with pkgs; [

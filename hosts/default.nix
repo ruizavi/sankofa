@@ -9,6 +9,7 @@
 
   modules = "${self}/modules/system";
   hardware = modules + "/hardware";
+  profiles = "${self}/hosts/profiles";
 
   specialArgs = {inherit inputs self themes;};
 in {
@@ -21,11 +22,11 @@ in {
         ./sankofa
 
         "${modules}/config"
-        "${modules}/config/hypr.nix"
         "${modules}/programs"
         "${modules}/security"
         "${modules}/services"
         "${hardware}/bluetooth.nix"
+        "${profiles}/hyprland"
 
         {
           home-manager = {

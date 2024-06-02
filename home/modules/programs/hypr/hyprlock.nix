@@ -1,12 +1,4 @@
-{
-  inputs,
-  themes,
-  ...
-}: {
-  imports = [
-    inputs.hyprlock.homeManagerModules.hyprlock
-  ];
-
+{themes, ...}: {
   programs.hyprlock = {
     enable = true;
 
