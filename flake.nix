@@ -12,6 +12,7 @@
     hyprlock.url = "github:hyprwm/hyprlock";
     anyrun.url = "github:Kirottu/anyrun";
     rust-overlay.url = "github:oxalica/rust-overlay";
+    nixd.url = "github:nix-community/nixd";
     spicetify-nix.url = "github:the-argus/spicetify-nix";
     flake-utils.url = "github:numtide/flake-utils";
     catppuccin-vsc.url = "github:catppuccin/vscode";

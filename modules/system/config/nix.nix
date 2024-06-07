@@ -5,9 +5,9 @@
   pkgs,
   ...
 }: {
-  environment.systemPackages = with pkgs; [
-    git
-  ];
+
+
+  programs.nix-ld.enable = true;
 
   programs.nh = {
     enable = true;
@@ -45,8 +45,13 @@
       inputs.rust-overlay.overlays.default
       inputs.nix-vscode-extensions.overlays.default
       inputs.nur.overlay
+      inputs.nixd.overlay.default
     ];
   };
+
+  environment.systemPackages = with pkgs; [
+    git
+  ];
 
   system.stateVersion = lib.mkDefault "23.11";
 }

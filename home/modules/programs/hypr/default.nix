@@ -1,8 +1,8 @@
 {
   imports = [
     ./settings
-    ./hyprlock.nix
-    ./swayidle.nix
+    #    ./hyprlock.nix
+    # ./swayidle.nix
   ];
 
   wayland.windowManager.hyprland = {

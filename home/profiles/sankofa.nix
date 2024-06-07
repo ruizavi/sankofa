@@ -12,6 +12,7 @@
     ../modules/programs/ags
     ../modules/programs/wlogout
     ../modules/dev
+    ../modules/programs/spicetify.nix
 
     ../modules/config/gtk.nix
     ../modules/config/home-cursor.nix
@@ -36,11 +37,19 @@
       # GUI
       inherit
         (pkgs)
-        zathura
-        obsidian
-        keepassxc
-        spotify
-        discord
+        # zathura
+        
+        # obsidian
+        
+        # keepassxc
+        
+        # spotify
+        
+        anytype
+        # discord
+        
+        # obs-studio
+        
         ;
     };
   };

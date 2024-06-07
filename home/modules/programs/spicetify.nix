@@ -1,10 +1,10 @@
 {
   pkgs,
   lib,
-  spicetify-nix,
+  inputs,
   ...
 }: let
-  spicePkgs = spicetify-nix.packages.${pkgs.system}.default;
+  spicePkgs = inputs.spicetify-nix.packages.${pkgs.system}.default;
 in {
   # allow spotify to be installed if you don't have unfree enabled already
   nixpkgs.config.allowUnfreePredicate = pkg:
@@ -15,8 +15,8 @@ in {
   # configure spicetify :)
   programs.spicetify = {
     enable = true;
-    theme = spicePkgs.themes.catppuccin;
-    colorScheme = "mocha";
+    theme = spicePkgs.themes.Dribbblish;
+    colorScheme = "nord-dark";
 
     enabledExtensions = with spicePkgs.extensions; [
       fullAppDisplay

@@ -19,11 +19,14 @@
         clang-tools
         cmake
         zig
+        zls
         bun
         nodejs
         typescript
         biome
-        warp-terminal
+        rust-analyzer
+        # warp-terminal
+        
         dbeaver
         gh
         ;
@@ -35,6 +38,7 @@
         prettier
         prisma
         typescript-language-server
+        vscode-langservers-extracted
         ;
     };
   };
