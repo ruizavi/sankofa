@@ -29,7 +29,12 @@ export const BatteryWidget = () =>
                     className: "batteryProgress",
                     rounded: true,
                     inverted: false,
-                    value
+                    value,
+          setup: (self) => 
+            self
+            .hook(battery, w => {
+              w.toggleClassName("batteryProgress-charging", battery.charging || battery.charged); 
+              w.toggleClassName("batteryProgress-low", battery.percent < 25)})
                 }),
                 BatStatus()
             ]

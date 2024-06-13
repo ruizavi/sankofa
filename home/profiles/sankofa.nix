@@ -8,6 +8,7 @@
     ../modules/programs/firefox.nix
     ../modules/programs/vscode
     ../modules/programs/hypr
+    ../modules/programs/swaync
     ../modules/programs/anyrun
     ../modules/programs/ags
     ../modules/programs/wlogout
@@ -46,6 +47,7 @@
         # spotify
         
         anytype
+        adobe-reader
         # discord
         
         # obs-studio

@@ -45,13 +45,14 @@
       inputs.rust-overlay.overlays.default
       inputs.nix-vscode-extensions.overlays.default
       inputs.nur.overlay
-      inputs.nixd.overlay.default
+      inputs.nixd.overlays.default
     ];
   };
 
   environment.systemPackages = with pkgs; [
     git
-  ];
+    nixd
+];
 
   system.stateVersion = lib.mkDefault "23.11";
 }

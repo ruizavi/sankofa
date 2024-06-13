@@ -5,7 +5,10 @@ tooltip { border-radius: calc(12px + 2px); background: #1e1e2e; }
 /* Battery */
 .batteryButton { padding: 3px 2px 6px 2px; margin: 1px; }
 
+
 .batteryProgress { color: #73DACA; padding: 4px 4px; margin: 0.1rem; font-size: 6px; background: #1e1e2e; min-height: 1.75rem; min-width: 1.75rem; }
+.batteryProgress-charging { color: #CCDA73; padding: 4px 4px; margin: 0.1rem; font-size: 6px; background: #1e1e2e; min-height: 1.75rem; min-width: 1.75rem; }
+.batteryProgress-low { color: #DA7383; padding: 4px 4px; margin: 0.1rem; font-size: 6px; background: #1e1e2e; min-height: 1.75rem; min-width: 1.75rem; }
 
 /* CPU */
 .cpuButton { padding: 6px 2px 3px 2px; margin: 2px; }

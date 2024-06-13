@@ -27,7 +27,7 @@
         rust-analyzer
         # warp-terminal
         
-        dbeaver
+        dbeaver-bin
         gh
         ;
 

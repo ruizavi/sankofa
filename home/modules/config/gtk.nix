@@ -15,7 +15,7 @@
 
     catppuccin = {
       enable = true;
-      flavour = "mocha";
+      flavor = "mocha";
       accent = "pink";
       size = "standard";
       tweaks = ["black"];

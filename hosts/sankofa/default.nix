@@ -4,6 +4,9 @@
   ];
 
   boot = {
+
+   kernelPackages = pkgs.linuxKernel.packages.linux_6_9;
+
     initrd = {
       systemd.enable = true;
       supportedFilesystems = ["ext4"];

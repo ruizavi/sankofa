@@ -9,7 +9,6 @@
     nix-vscode-extensions.url = "github:nix-community/nix-vscode-extensions";
     nix-vscode-extensions.inputs.flake-utils.follows = "flake-utils";
     nix-vscode-extensions.inputs.nixpkgs.follows = "nixpkgs";
-    hyprlock.url = "github:hyprwm/hyprlock";
     anyrun.url = "github:Kirottu/anyrun";
     rust-overlay.url = "github:oxalica/rust-overlay";
     nixd.url = "github:nix-community/nixd";
