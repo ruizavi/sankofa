@@ -45,9 +45,8 @@
         # keepassxc
         
         # spotify
-        
+        google-chrome        
         anytype
-        adobe-reader
         # discord
         
         # obs-studio
